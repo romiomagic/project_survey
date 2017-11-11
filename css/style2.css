@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 
+.container {
+	margin-bottom: 30px;
+}
 
 .wrapper {
 	font-family: 'PT Sans', sans-serif;
@@ -60,7 +63,13 @@ div.content {
 }
 
 ul.questions {
-	margin-top: 300px;
+	margin-top: 250px;
+}
+
+@media (max-width: 576px) {
+	ul.questions {
+	margin-top: 10px;
+}	
 }
 
 input.form-control {
