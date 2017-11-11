@@ -86,7 +86,7 @@ input.form-control:focus {
 
 /*sprite with stars*/
 #reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
-  background: url('http://positivecrash.com/wp-content/uploads/ico-s71a7fdede6.png') no-repeat;
+  background: url('../img/rating.png') no-repeat;
 }
 
 #reviewStars-input {
