@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.logo-sfedu {
+	max-height: 300px;
+}
+.lead {
+	font-family: 'PT Sans', sans-serif;
+	max-width: 700px;
+}
+
+
+.btn-shadow {
+	box-shadow: 9px 12px 33px 0px;
+}
+
+@media (max-width: 767px){
+  h1 {
+  	font-size: 24px;
+  }
+
+}
+
+/*@media (max-width: 576px) {
+	.logo-sfedu {
+	height: 200px;	
+}*/
+	h1.margin-bottom {
+		margin-bottom: 20px;
+	}
+
+}
