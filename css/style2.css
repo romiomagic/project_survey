@@ -2,7 +2,7 @@
 
 
 .container {
-	margin-bottom: 30px;
+	margin-bottom: 90px;
 }
 
 .wrapper {
@@ -276,4 +276,22 @@ div.submit-button {
 button.btn {
 	border-radius: 5px;
 	font-weight: bold;
+	margin-top: 15px;
 }
+
+.footer {
+	height: 60px;
+	width: 100%;
+	position:fixed;
+	left: 0;
+	right: 0;
+	bottom:0;
+	background-color: #2bbbad;
+	margin: 0;
+	z-index: 1;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+

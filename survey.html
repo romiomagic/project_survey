@@ -20,6 +20,7 @@
 </head>
 <body>
 	<div class="container">
+		
 		<ul class="questions">
 			<li>
 				<div class="wrapper">
@@ -27,7 +28,7 @@
 					<div class="question"><h4>Ваша группа*</h4></div>
 					<div class="content">
 						<div class="input-field">
-          				<input id="group" type="text" class="validate">
+          				<input id="group" type="text" name="group-name" class="validate" required>
           				<label for="group">Например, КТмо1-7</label>
         				</div>
 						
@@ -42,11 +43,11 @@
 					<div class="content">
 						<div class="sex">
 							<p>
-						      <input class="with-gap" name="group1" type="radio" id="test1" />
+						      <input class="sex-choice" name="group1" type="radio" id="test1"/>
 						      <label for="test1">Мужской</label>
 						    </p>
 						    <p>
-						      <input class="with-gap" name="group1" type="radio" id="test2" />
+						      <input class="sex-choice" name="group1" type="radio" id="test2"/>
 						      <label for="test2">Женский</label>
 						    </p>
 						</div>   
@@ -94,7 +95,7 @@
 						    <input class="with-gap" name="group2" type="radio" id="test4" />
 						    <label for="test4">Нет (укажите где)</label>
 						    <div class="input-field alternative">
-          					<input id="city" type="text" class="validate">
+          					<input id="city" type="text" class="validate" required>
           					<label for="city">Например, Ростов-на-Дону</label>
         				</div>
 						</p>
@@ -137,13 +138,18 @@
 			</li>
 
 		</ul>
+		
 		<div class="submit-button">
-			<button class="btn waves-effect waves-light btn-large" type="submit" name="action">Отправить
+			<button class="btn waves-effect waves-light btn-large" type="submit" onclick="validateGroupName(this.ul)" name="action">Отправить
 			    <i class="material-icons right"></i>
 			 </button>
 		 </div>
 	</div>
-
+	<div class="footer">
+		<div class="progress">
+	    	
+		</div>
+	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -151,6 +157,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 
 	<script src="js/toggle.js"></script>
+	<script src="js/validate.js"></script>
 
 
   <!-- Compiled and minified JavaScript -->

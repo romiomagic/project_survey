@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+
+	<!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="css/materialize.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+	<link rel="stylesheet" href="css/style3.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Административная панель</title>
+</head>
+<body>
+		<div class="container-fluid display-table">
+			<div class="row display-table-row ">
+				<div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+					<h1 class="hidden-xs hidden-sm">Меню</h1>
+					<ul>
+						<li class="link active">
+							<a href="survey1.html">
+								<span class="glyphicon glyphicon-pencil"></span>
+								<span class="hidden-xs hidden-sm">Почему вы поступили в ВУЗ?</span>
+							</a>
+						</li>
+						<li class="link">
+							<a href="survey1.html">
+								<span class="glyphicon glyphicon-pencil"></span>
+								<span class="hidden-xs hidden-sm">Почему вы не успеваете в учебе?</span>
+							</a>
+						</li>
+						<li class="link">
+							<a href="survey1.html">
+								<span class="glyphicon glyphicon-pencil"></span>
+								<span class="hidden-xs hidden-sm">Ваша специальность совпадает с ожидаемой?</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-10 col-sm-11 valign-top box container-fluid">
+
+					<div class="row">
+						<header id="nav-header" class="clearfix">
+							<div class="col-md-5">
+							<nav class="navbar-default left">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+      							</button>
+							</nav>	
+							</div>
+							<div class="col-md-7">
+								<ul class="pull-right">
+									<li id="welcome" class="hidden-xs">Добро пожаловать</li>
+									<li>
+										<a href="#" class="logout">
+											<span class="glyphicon glyphicon-log-out"> Выйти</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</header>
+					</div>
+					<div class="row">
+				
+						 <ul class="collapsible" data-collapsible="accordion">
+						    <li>
+						      	<div class="collapsible-header">1. Ваша группа</div>
+						      	<div class="collapsible-body">
+								<table class="table bordered">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">Ответ</th>
+							      </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">1</th>
+							      <td>КТбо1-9</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">2</th>
+							      <td>КТмо1-7</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">3</th>
+							      <td>РТмо1-33</td>
+							    </tr>
+							  </tbody>
+							</table> 
+						      	</div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header">2. Пол</div>
+						      <div class="collapsible-body">
+						      	<div id="piechart"></div>
+						
+						      </div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header">3. Желание получить диплом о высшем образовании</div>
+						      <div class="collapsible-body">
+									<div id="chart_div"></div>
+						      </div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header">4. До поступления в вуз Вы проживали в Таганроге?</div>
+						      <div class="collapsible-body">
+									<div id="piechart2"></div>
+									<p class="text-center margins"><span class="color-swatch text-center" style="background-color:#DC3912;"> </span><i>Нет (укажите где)</i>
+									</p>
+									<div class="other-list">
+										<div class="answer_brick">
+											Ростов-на-Дону
+										</div>
+										<div class="answer_brick">
+											Шахты
+										</div>
+									</div>
+						      </div>
+						    </li>
+						    <li>
+						      <div class="collapsible-header">5. Подавали ли Вы заявления в другие вузы?</div>
+						      <div class="collapsible-body">
+									<div id="chart_div2"></div>
+						      </div>
+						    </li>
+						  </ul>
+					</div>
+
+					<div class="row">
+						<footer id="admin-footer" class="clearfix">
+							<div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+							<div class="pull-right">Административная панель</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script src="js/default.js"></script>
+	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+
+
+
+</body>
+</html>
