@@ -26,6 +26,14 @@
 	box-shadow: 9px 12px 33px 0px;
 }
 
+a.waves-effect {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover.waves-effect {
+	color: #000;
+}
+
 h1 {
 	font-size: 36px;
 }

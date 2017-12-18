@@ -8,9 +8,6 @@
 .wrapper {
 	font-family: 'PT Sans', sans-serif;
 }
-.content {
-	
-    }
 
 
 .glyphicon-arrow-right {
@@ -279,16 +276,13 @@ button.btn {
 	margin-top: 15px;
 }
 
-.footer {
-	height: 60px;
-	width: 100%;
-	position:fixed;
-	left: 0;
-	right: 0;
-	bottom:0;
-	background-color: #2bbbad;
-	margin: 0;
-	z-index: 1;
+button.btn a {
+  color: #fff;
+}
+
+button.btn a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 input:invalid:not(:placeholder-shown) + .form__error {
@@ -297,7 +291,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 
 
-
+/*Стили прогресс бара*/
 
 progress{
     position:fixed;
