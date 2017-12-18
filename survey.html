@@ -145,11 +145,27 @@
 			 </button>
 		 </div>
 	</div>
-	<div class="footer">
-		<div class="progress">
-	    	
-		</div>
-	</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script>
+	    $(function() {
+	        $(window).on("scroll resize", function() {
+	            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+	            $(".progress-bar").css({
+	                "width": (100 * o | 0) + "%"
+	            });
+	            $('progress')[0].value = o;
+	        })
+	    });
+	</script>
+
+	<progress value="0">
+	    <div class="progress-container">
+	        <span class="progress-bar"></span>
+	    </div>
+	</progress>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
